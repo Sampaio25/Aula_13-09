@@ -1,47 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Documento</title>
 </head>
 
 <body>
-
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-12-col-sm-8-col-md-6">
-                <div class="alert-primary">
-                    <h4 class="text-center text-white">
-                        Localizador de Endereço
-                    </h4>
+            <div class="col-12 col-sm-8 col-md-8">
+                <div class="text-center mt-4 bg-success">
+                    <h1>API IBGE</h1>
                 </div>
-                <form>
-                    <div class="form-group row">
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <input type="text" name="UF" ID="UF" class="form-control" placeholer="Estado">
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6">
-                            <input type="text" name="Cidade" id="Cidade" class="form-control" placeholder="Cidade">
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-12 col-sm-10 col-md-12">
-                                <button class="btn btn-success btn-block">Buscar</button>
-                            </div>
-                        </div>
+                <form action="" method="get">
+                    <div class="form-group">
+                        <select id="uf" class="form-control" name="">
+                            <option>Estados</option>
+                        </select>
                     </div>
                 </form>
+                <div class="localidade">
+                    <div class="form-group">
+                        <label for="local" id="city">Coloque sua Cidade:</label>
+                        <select id="loki" class="form-control" name="">
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-
-    <script src="js/jquery-3.6.1.slim.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-
+    <script src="js.js"></script>
 </body>
 
 </html>
